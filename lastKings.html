@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <br><br>
+            <label for="password">password:</label>
+            <input type="text" id="psd" name="password">
+            <button type="button" id="btun1" onclick="validateForm()">login</button>
+    
+        </form>
+    </body>
+    <script>
+        
+            function validateForm() {
+                var inputField = document.getElementById("username");
+                var username = inputField.value.trim();
+                // var inputField = document.getElementById("username");
+                var passkey = document.getElementById('psd').value;
+                
+    
+                if (username === "sam" && passkey==='111' ) {
+                    alert("good");
+                    window.location.href = "navigat.html"
+                    // return false; // Prevent form submission
+                }
+                
+                // Navigate to page2.html
+                else {
+alert('enter correct credentials');
+
+                }
+                
+            }
+        
+    </script>
+    </html>  
+</body>
+<style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* height: 100vh; 
+     */
+    /* margin: 0; */
+    /* background-image:url(../Downloads/justonKing.jpg); */
+    background-image: url(../hospital1/justonKing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 26ch;
+
+
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;   /* Adjust the bottom margin of input fields*/
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+}
+#btun1 {
+    width: 45%;
+    height: 50%;
+    background-color: darkslategray;
+    font-size: medium;
+    display: block;
+
+}
+label {
+    color:whitesmoke;
+    color: cyan;
+    font-size: 20px;
+
+}
+</style>
+</html>
